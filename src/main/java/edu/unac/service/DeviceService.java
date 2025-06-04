@@ -12,7 +12,7 @@ import java.util.Optional;
 @Service
 public class DeviceService {
     @Autowired
-    private DeviceRepository deviceRepository;
+    private final DeviceRepository deviceRepository;
 
     public DeviceService(DeviceRepository deviceRepository) {
         this.deviceRepository = deviceRepository;

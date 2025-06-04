@@ -19,7 +19,7 @@ public class DeviceService {
     }
 
     public Device registerDevice(Device device) {
-        if (device.getName() == null || device.getName().length() < 3 || device.getType().length() < 3) {
+        if (device.getName() == null || device.getName().length() < 3) {
             throw new IllegalArgumentException("Device name must be at least 3 characters long");
         }
         device.setStatus(DeviceStatus.AVAILABLE);
